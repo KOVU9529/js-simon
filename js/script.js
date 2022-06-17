@@ -31,7 +31,7 @@ let arrayFinal=[];
          //Chiedere i numeri all'utente
          const userNumber=parseInt(prompt('Dimmi uno dei 5 numeri visualizzati 30 secondi fa'));
          //Imposto le condizioni di aggiunta all'arrayFinal
-         if(generateArrayRandom.includes(userNumber)){
+         if(generateArrayRandom.includes(userNumber)&& !arrayFinal.includes(userNumber)){
             arrayFinal.push(userNumber);
          }else{}
      } 
